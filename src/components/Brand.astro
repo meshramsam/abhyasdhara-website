@@ -1,0 +1,8 @@
+---
+interface Props { compact?: boolean; }
+const { compact = false } = Astro.props;
+---
+<span class:list={['brand', { 'brand-compact': compact }]}>
+  <svg class="brand-mark" width="44" height="48" viewBox="0 0 44 48" fill="none" aria-hidden="true"><path d="M3 13c8 0 13 3 19 8 6-5 11-8 19-8v24c-8 0-13 2-19 7-6-5-11-7-19-7V13Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M22 21v23M9 23l7 3m-7 5 7 3m12-8 7-3m-7 11 7-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="6" r="4" fill="var(--accent)"/></svg>
+  <span class="brand-word">अभ्यासधारा<span class="brand-sub">अकॅडमी</span></span>
+</span>
